@@ -1,0 +1,323 @@
+[2026-03-14 20:25:09,222] INFO app: File logging initialized. backend_log=D:\projects\software\backend\logs\backend.log frontend_log=D:\projects\software\backend\logs\frontend.log
+[2026-03-14 20:25:23,424] INFO app: File logging initialized. backend_log=D:\projects\software\backend\logs\backend.log frontend_log=D:\projects\software\backend\logs\frontend.log
+[2026-03-14 20:25:54,875] INFO app: File logging initialized. backend_log=D:\projects\software\backend\logs\backend.log frontend_log=D:\projects\software\backend\logs\frontend.log
+[2026-03-14 20:25:54,899] WARNING werkzeug: Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+[2026-03-14 20:25:54,912] INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.40.21.251:5000
+[2026-03-14 20:25:54,912] INFO werkzeug: [33mPress CTRL+C to quit[0m
+[2026-03-14 20:27:02,790] INFO werkzeug: 100.93.106.115 - - [14/Mar/2026 20:27:02] "GET / HTTP/1.1" 200 -
+[2026-03-14 20:27:09,483] INFO werkzeug: 127.0.0.1 - - [14/Mar/2026 20:27:09] "GET / HTTP/1.1" 200 -
+[2026-03-14 20:31:52,406] INFO app: File logging initialized. backend_log=D:\projects\software\backend\logs\backend.log frontend_log=D:\projects\software\backend\logs\frontend.log
+[2026-03-14 20:39:13,401] INFO app: File logging initialized. backend_log=D:\projects\software\backend\logs\backend.log frontend_log=D:\projects\software\backend\logs\frontend.log
+[2026-03-14 20:39:13,436] INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.40.21.251:5000
+[2026-03-14 20:39:13,436] INFO werkzeug: [33mPress CTRL+C to quit[0m
+[2026-03-14 20:39:58,890] INFO werkzeug: 100.93.106.115 - - [14/Mar/2026 20:39:58] "GET / HTTP/1.1" 200 -
+[2026-03-14 20:40:05,871] INFO werkzeug: 127.0.0.1 - - [14/Mar/2026 20:40:05] "GET / HTTP/1.1" 200 -
+[2026-03-14 22:53:24,566] INFO app: File logging initialized. backend_log=D:\server\jianghan-software\src\backend\logs\backend.log frontend_log=D:\server\jianghan-software\src\backend\logs\frontend.log
+[2026-03-14 22:53:24,601] INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.40.21.251:5000
+[2026-03-14 22:53:24,601] INFO werkzeug: [33mPress CTRL+C to quit[0m
+[2026-03-14 22:53:54,900] INFO werkzeug: 127.0.0.1 - - [14/Mar/2026 22:53:54] "GET / HTTP/1.1" 200 -
+[2026-03-14 22:53:55,144] INFO werkzeug: 127.0.0.1 - - [14/Mar/2026 22:53:55] "GET / HTTP/1.1" 200 -
+[2026-03-14 22:54:35,492] INFO werkzeug: 127.0.0.1 - - [14/Mar/2026 22:54:35] "[33mGET /api/ HTTP/1.1[0m" 404 -
+[2026-03-14 22:54:35,724] INFO werkzeug: 127.0.0.1 - - [14/Mar/2026 22:54:35] "GET /login HTTP/1.1" 200 -
+[2026-03-14 22:54:35,969] INFO werkzeug: 127.0.0.1 - - [14/Mar/2026 22:54:35] "GET /socket.io/?EIO=4&transport=polling HTTP/1.1" 200 -
+[2026-03-14 22:55:24,169] INFO app: File logging initialized. backend_log=D:\server\jianghan-software\src\backend\logs\backend.log frontend_log=D:\server\jianghan-software\src\backend\logs\frontend.log
+[2026-03-14 22:55:24,205] INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.40.21.251:5000
+[2026-03-14 22:55:24,205] INFO werkzeug: [33mPress CTRL+C to quit[0m
+[2026-03-14 22:55:32,394] INFO werkzeug: 127.0.0.1 - - [14/Mar/2026 22:55:32] "GET / HTTP/1.1" 200 -
+[2026-03-14 22:55:56,314] INFO app: File logging initialized. backend_log=D:\server\jianghan-software\src\backend\logs\backend.log frontend_log=D:\server\jianghan-software\src\backend\logs\frontend.log
+[2026-03-14 22:55:56,354] INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.40.21.251:5000
+[2026-03-14 22:55:56,354] INFO werkzeug: [33mPress CTRL+C to quit[0m
+[2026-03-14 22:55:59,537] INFO werkzeug: 127.0.0.1 - - [14/Mar/2026 22:55:59] "GET / HTTP/1.1" 200 -
+[2026-03-14 22:56:15,033] INFO werkzeug: 127.0.0.1 - - [14/Mar/2026 22:56:15] "GET / HTTP/1.1" 200 -
+[2026-03-14 22:56:35,885] INFO werkzeug: 127.0.0.1 - - [14/Mar/2026 22:56:35] "GET / HTTP/1.1" 200 -
+[2026-03-14 22:56:36,131] INFO werkzeug: 127.0.0.1 - - [14/Mar/2026 22:56:36] "GET / HTTP/1.1" 200 -
+[2026-03-14 22:56:36,380] INFO werkzeug: 127.0.0.1 - - [14/Mar/2026 22:56:36] "GET / HTTP/1.1" 200 -
+[2026-03-14 22:56:36,627] INFO werkzeug: 127.0.0.1 - - [14/Mar/2026 22:56:36] "GET / HTTP/1.1" 200 -
+[2026-03-14 22:56:36,859] INFO werkzeug: 127.0.0.1 - - [14/Mar/2026 22:56:36] "GET / HTTP/1.1" 200 -
+[2026-03-14 22:56:37,105] INFO werkzeug: 127.0.0.1 - - [14/Mar/2026 22:56:37] "GET / HTTP/1.1" 200 -
+[2026-03-14 22:56:37,352] INFO werkzeug: 127.0.0.1 - - [14/Mar/2026 22:56:37] "GET / HTTP/1.1" 200 -
+[2026-03-14 22:56:37,584] INFO werkzeug: 127.0.0.1 - - [14/Mar/2026 22:56:37] "GET / HTTP/1.1" 200 -
+[2026-03-14 22:56:37,830] INFO werkzeug: 127.0.0.1 - - [14/Mar/2026 22:56:37] "GET / HTTP/1.1" 200 -
+[2026-03-14 22:56:38,078] INFO werkzeug: 127.0.0.1 - - [14/Mar/2026 22:56:38] "GET / HTTP/1.1" 200 -
+[2026-03-14 23:14:03,866] INFO werkzeug: 127.0.0.1 - - [14/Mar/2026 23:14:03] "GET / HTTP/1.1" 200 -
+[2026-03-14 23:16:09,498] INFO werkzeug: 127.0.0.1 - - [14/Mar/2026 23:16:09] "GET / HTTP/1.1" 200 -
+[2026-03-15 00:17:08,254] INFO werkzeug: 127.0.0.1 - - [15/Mar/2026 00:17:08] "GET / HTTP/1.1" 200 -
+[2026-03-15 00:17:08,983] INFO werkzeug: 127.0.0.1 - - [15/Mar/2026 00:17:08] "GET / HTTP/1.1" 200 -
+[2026-03-15 00:18:05,126] INFO werkzeug: 127.0.0.1 - - [15/Mar/2026 00:18:05] "GET / HTTP/1.1" 200 -
+[2026-03-15 00:18:48,148] INFO werkzeug: 127.0.0.1 - - [15/Mar/2026 00:18:48] "GET /socket.io/?EIO=4&transport=polling HTTP/1.1" 200 -
+[2026-03-15 00:18:48,279] INFO werkzeug: 127.0.0.1 - - [15/Mar/2026 00:18:48] "GET / HTTP/1.1" 200 -
+[2026-03-15 00:23:31,805] INFO werkzeug: 127.0.0.1 - - [15/Mar/2026 00:23:31] "GET / HTTP/1.1" 200 -
+[2026-03-15 00:23:32,018] INFO werkzeug: 127.0.0.1 - - [15/Mar/2026 00:23:32] "GET /assets/main-Bz4JXUee.css HTTP/1.1" 200 -
+[2026-03-15 00:23:32,024] INFO werkzeug: 127.0.0.1 - - [15/Mar/2026 00:23:32] "GET /assets/main-DH0pcxN-.js HTTP/1.1" 200 -
+[2026-03-15 00:23:33,264] INFO werkzeug: 127.0.0.1 - - [15/Mar/2026 00:23:33] "GET /assets/logo-YLP-dm6U.svg HTTP/1.1" 200 -
+[2026-03-15 00:23:33,301] INFO werkzeug: 127.0.0.1 - - [15/Mar/2026 00:23:33] "GET /assets/model1-vvvDsA23.svg HTTP/1.1" 200 -
+[2026-03-15 00:23:33,405] INFO werkzeug: 127.0.0.1 - - [15/Mar/2026 00:23:33] "GET /api/health HTTP/1.1" 200 -
+[2026-03-15 00:23:33,411] INFO werkzeug: 127.0.0.1 - - [15/Mar/2026 00:23:33] "GET /assets/model2-DoOdb8cp.svg HTTP/1.1" 200 -
+[2026-03-15 00:23:33,560] INFO werkzeug: 127.0.0.1 - - [15/Mar/2026 00:23:33] "GET /assets/model3-D8FYan6O.svg HTTP/1.1" 200 -
+[2026-03-15 00:23:33,561] INFO werkzeug: 127.0.0.1 - - [15/Mar/2026 00:23:33] "GET /assets/desk-CbZD-8Br.svg HTTP/1.1" 200 -
+[2026-03-15 00:23:37,122] INFO werkzeug: 127.0.0.1 - - [15/Mar/2026 00:23:37] "GET /favicon.ico HTTP/1.1" 200 -
+[2026-03-15 00:23:38,686] ERROR app: Exception on /api/login [POST]
+Traceback (most recent call last):
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\engine\base.py", line 143, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\engine\base.py", line 3317, in raw_connection
+    return self.pool.connect()
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\pool\base.py", line 448, in connect
+    return _ConnectionFairy._checkout(self)
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\pool\base.py", line 1272, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\pool\base.py", line 712, in checkout
+    rec = pool._do_get()
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\pool\impl.py", line 177, in _do_get
+    with util.safe_reraise():
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\util\langhelpers.py", line 121, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\pool\impl.py", line 175, in _do_get
+    return self._create_connection()
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\pool\base.py", line 389, in _create_connection
+    return _ConnectionRecord(self)
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\pool\base.py", line 674, in __init__
+    self.__connect()
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\pool\base.py", line 900, in __connect
+    with util.safe_reraise():
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\util\langhelpers.py", line 121, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\pool\base.py", line 896, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\engine\create.py", line 667, in connect
+    return dialect.connect(*cargs_tup, **cparams)
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\engine\default.py", line 630, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Anaconda\envs\software\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anaconda\envs\software\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Anaconda\envs\software\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Anaconda\envs\software\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\server\jianghan-software\src\backend\blueprints\User.py", line 179, in login
+    user = User.query.filter_by(username=data['username']).first()
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\orm\query.py", line 2759, in first
+    return self.limit(1)._iter().first()  # type: ignore
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\orm\query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\orm\session.py", line 2239, in _execute_internal
+    conn = self._connection_for_bind(bind)
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\orm\session.py", line 2108, in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+  File "<string>", line 2, in _connection_for_bind
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\orm\session.py", line 1187, in _connection_for_bind
+    conn = bind.connect()
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\engine\base.py", line 3293, in connect
+    return self._connection_cls(self)
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\engine\base.py", line 145, in __init__
+    Connection._handle_dbapi_exception_noconnection(
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\engine\base.py", line 2448, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\engine\base.py", line 143, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\engine\base.py", line 3317, in raw_connection
+    return self.pool.connect()
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\pool\base.py", line 448, in connect
+    return _ConnectionFairy._checkout(self)
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\pool\base.py", line 1272, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\pool\base.py", line 712, in checkout
+    rec = pool._do_get()
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\pool\impl.py", line 177, in _do_get
+    with util.safe_reraise():
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\util\langhelpers.py", line 121, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\pool\impl.py", line 175, in _do_get
+    return self._create_connection()
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\pool\base.py", line 389, in _create_connection
+    return _ConnectionRecord(self)
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\pool\base.py", line 674, in __init__
+    self.__connect()
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\pool\base.py", line 900, in __connect
+    with util.safe_reraise():
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\util\langhelpers.py", line 121, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\pool\base.py", line 896, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\engine\create.py", line 667, in connect
+    return dialect.connect(*cargs_tup, **cparams)
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\engine\default.py", line 630, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[2026-03-15 00:23:38,689] INFO werkzeug: 127.0.0.1 - - [15/Mar/2026 00:23:38] "[35m[1mPOST /api/login HTTP/1.1[0m" 500 -
+[2026-03-15 00:49:47,966] INFO werkzeug: 127.0.0.1 - - [15/Mar/2026 00:49:47] "GET / HTTP/1.1" 200 -
+[2026-03-15 00:50:09,398] ERROR app: Exception on /api/login [POST]
+Traceback (most recent call last):
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\engine\base.py", line 143, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\engine\base.py", line 3317, in raw_connection
+    return self.pool.connect()
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\pool\base.py", line 448, in connect
+    return _ConnectionFairy._checkout(self)
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\pool\base.py", line 1272, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\pool\base.py", line 712, in checkout
+    rec = pool._do_get()
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\pool\impl.py", line 177, in _do_get
+    with util.safe_reraise():
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\util\langhelpers.py", line 121, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\pool\impl.py", line 175, in _do_get
+    return self._create_connection()
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\pool\base.py", line 389, in _create_connection
+    return _ConnectionRecord(self)
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\pool\base.py", line 674, in __init__
+    self.__connect()
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\pool\base.py", line 900, in __connect
+    with util.safe_reraise():
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\util\langhelpers.py", line 121, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\pool\base.py", line 896, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\engine\create.py", line 667, in connect
+    return dialect.connect(*cargs_tup, **cparams)
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\engine\default.py", line 630, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Anaconda\envs\software\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anaconda\envs\software\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Anaconda\envs\software\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Anaconda\envs\software\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\server\jianghan-software\src\backend\blueprints\User.py", line 179, in login
+    user = User.query.filter_by(username=data['username']).first()
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\orm\query.py", line 2759, in first
+    return self.limit(1)._iter().first()  # type: ignore
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\orm\query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\orm\session.py", line 2239, in _execute_internal
+    conn = self._connection_for_bind(bind)
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\orm\session.py", line 2108, in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+  File "<string>", line 2, in _connection_for_bind
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\orm\session.py", line 1187, in _connection_for_bind
+    conn = bind.connect()
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\engine\base.py", line 3293, in connect
+    return self._connection_cls(self)
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\engine\base.py", line 145, in __init__
+    Connection._handle_dbapi_exception_noconnection(
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\engine\base.py", line 2448, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\engine\base.py", line 143, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\engine\base.py", line 3317, in raw_connection
+    return self.pool.connect()
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\pool\base.py", line 448, in connect
+    return _ConnectionFairy._checkout(self)
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\pool\base.py", line 1272, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\pool\base.py", line 712, in checkout
+    rec = pool._do_get()
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\pool\impl.py", line 177, in _do_get
+    with util.safe_reraise():
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\util\langhelpers.py", line 121, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\pool\impl.py", line 175, in _do_get
+    return self._create_connection()
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\pool\base.py", line 389, in _create_connection
+    return _ConnectionRecord(self)
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\pool\base.py", line 674, in __init__
+    self.__connect()
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\pool\base.py", line 900, in __connect
+    with util.safe_reraise():
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\util\langhelpers.py", line 121, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\pool\base.py", line 896, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\engine\create.py", line 667, in connect
+    return dialect.connect(*cargs_tup, **cparams)
+  File "D:\Anaconda\envs\software\lib\site-packages\sqlalchemy\engine\default.py", line 630, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[2026-03-15 00:50:09,399] INFO werkzeug: 127.0.0.1 - - [15/Mar/2026 00:50:09] "[35m[1mPOST /api/login HTTP/1.1[0m" 500 -
+[2026-03-15 01:07:53,249] INFO app: File logging initialized. backend_log=D:\server\jianghan-software\src\backend\logs\backend.log frontend_log=D:\server\jianghan-software\src\backend\logs\frontend.log
+[2026-03-15 01:08:00,597] INFO app: File logging initialized. backend_log=D:\server\jianghan-software\src\backend\logs\backend.log frontend_log=D:\server\jianghan-software\src\backend\logs\frontend.log
+[2026-03-15 01:08:07,931] INFO app: File logging initialized. backend_log=D:\server\jianghan-software\src\backend\logs\backend.log frontend_log=D:\server\jianghan-software\src\backend\logs\frontend.log
+[2026-03-15 01:08:15,319] INFO app: File logging initialized. backend_log=D:\server\jianghan-software\src\backend\logs\backend.log frontend_log=D:\server\jianghan-software\src\backend\logs\frontend.log
+[2026-03-15 01:08:22,655] INFO app: File logging initialized. backend_log=D:\server\jianghan-software\src\backend\logs\backend.log frontend_log=D:\server\jianghan-software\src\backend\logs\frontend.log
+[2026-03-15 01:08:29,965] INFO app: File logging initialized. backend_log=D:\server\jianghan-software\src\backend\logs\backend.log frontend_log=D:\server\jianghan-software\src\backend\logs\frontend.log
+[2026-03-15 01:08:37,318] INFO app: File logging initialized. backend_log=D:\server\jianghan-software\src\backend\logs\backend.log frontend_log=D:\server\jianghan-software\src\backend\logs\frontend.log
+[2026-03-15 01:08:44,629] INFO app: File logging initialized. backend_log=D:\server\jianghan-software\src\backend\logs\backend.log frontend_log=D:\server\jianghan-software\src\backend\logs\frontend.log
+[2026-03-15 01:08:51,943] INFO app: File logging initialized. backend_log=D:\server\jianghan-software\src\backend\logs\backend.log frontend_log=D:\server\jianghan-software\src\backend\logs\frontend.log
+[2026-03-15 01:08:59,272] INFO app: File logging initialized. backend_log=D:\server\jianghan-software\src\backend\logs\backend.log frontend_log=D:\server\jianghan-software\src\backend\logs\frontend.log
+[2026-03-15 01:09:06,606] INFO app: File logging initialized. backend_log=D:\server\jianghan-software\src\backend\logs\backend.log frontend_log=D:\server\jianghan-software\src\backend\logs\frontend.log
+[2026-03-15 01:09:13,905] INFO app: File logging initialized. backend_log=D:\server\jianghan-software\src\backend\logs\backend.log frontend_log=D:\server\jianghan-software\src\backend\logs\frontend.log
+[2026-03-15 01:09:21,213] INFO app: File logging initialized. backend_log=D:\server\jianghan-software\src\backend\logs\backend.log frontend_log=D:\server\jianghan-software\src\backend\logs\frontend.log
+[2026-03-15 01:09:28,503] INFO app: File logging initialized. backend_log=D:\server\jianghan-software\src\backend\logs\backend.log frontend_log=D:\server\jianghan-software\src\backend\logs\frontend.log
+[2026-03-15 01:09:35,822] INFO app: File logging initialized. backend_log=D:\server\jianghan-software\src\backend\logs\backend.log frontend_log=D:\server\jianghan-software\src\backend\logs\frontend.log
+[2026-03-15 01:09:43,125] INFO app: File logging initialized. backend_log=D:\server\jianghan-software\src\backend\logs\backend.log frontend_log=D:\server\jianghan-software\src\backend\logs\frontend.log
+[2026-03-15 01:09:43,778] INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.40.21.251:5000
+[2026-03-15 01:09:43,778] INFO werkzeug: [33mPress CTRL+C to quit[0m
+[2026-03-15 01:09:52,359] INFO app: File logging initialized. backend_log=D:\server\jianghan-software\src\backend\logs\backend.log frontend_log=D:\server\jianghan-software\src\backend\logs\frontend.log
+[2026-03-15 01:09:52,404] INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.40.21.251:5000
+[2026-03-15 01:09:52,404] INFO werkzeug: [33mPress CTRL+C to quit[0m
+[2026-03-15 01:10:12,919] INFO werkzeug: 127.0.0.1 - - [15/Mar/2026 01:10:12] "GET / HTTP/1.1" 200 -
+[2026-03-15 01:10:29,521] INFO werkzeug: 127.0.0.1 - - [15/Mar/2026 01:10:29] "POST /api/login HTTP/1.1" 200 -
+[2026-03-15 01:10:39,576] INFO werkzeug: 127.0.0.1 - - [15/Mar/2026 01:10:39] "GET /api/users HTTP/1.1" 200 -
+[2026-03-15 01:10:49,777] INFO werkzeug: 127.0.0.1 - - [15/Mar/2026 01:10:49] "GET / HTTP/1.1" 200 -
+[2026-03-15 01:55:39,886] INFO werkzeug: 127.0.0.1 - - [15/Mar/2026 01:55:39] "POST /api/login HTTP/1.1" 200 -
+[2026-03-15 01:55:54,707] INFO werkzeug: 127.0.0.1 - - [15/Mar/2026 01:55:54] "GET /api/users HTTP/1.1" 200 -
+[2026-03-15 01:55:54,938] INFO werkzeug: 127.0.0.1 - - [15/Mar/2026 01:55:54] "[33mGET /api/directories HTTP/1.1[0m" 404 -
+[2026-03-15 01:55:55,170] INFO werkzeug: 127.0.0.1 - - [15/Mar/2026 01:55:55] "[33mGET /api/model-config HTTP/1.1[0m" 404 -
+[2026-03-15 01:56:16,798] INFO werkzeug: 127.0.0.1 - - [15/Mar/2026 01:56:16] "[33mGET /api/data-import/directory-file/directories HTTP/1.1[0m" 404 -
+[2026-03-15 01:56:17,044] INFO werkzeug: 127.0.0.1 - - [15/Mar/2026 01:56:17] "[33mGET /api/model-management/configs HTTP/1.1[0m" 404 -
+[2026-03-15 01:56:34,475] INFO werkzeug: 127.0.0.1 - - [15/Mar/2026 01:56:34] "GET /api/data-import/directory-file/file-structure HTTP/1.1" 200 -
+[2026-03-15 01:56:34,704] INFO werkzeug: 127.0.0.1 - - [15/Mar/2026 01:56:34] "[31m[1mPOST /api/data-import/directory-file/page HTTP/1.1[0m" 400 -
+[2026-03-15 01:56:43,711] INFO werkzeug: 127.0.0.1 - - [15/Mar/2026 01:56:43] "[33mGET /api/train/status HTTP/1.1[0m" 404 -
+[2026-03-15 01:56:43,942] INFO werkzeug: 127.0.0.1 - - [15/Mar/2026 01:56:43] "[33mGET /api/pretreatment/status HTTP/1.1[0m" 404 -
+[2026-03-15 01:56:44,175] INFO werkzeug: 127.0.0.1 - - [15/Mar/2026 01:56:44] "[33mGET /api/model-management/list HTTP/1.1[0m" 404 -
+[2026-03-15 01:57:26,308] INFO werkzeug: 127.0.0.1 - - [15/Mar/2026 01:57:26] "GET /api/health HTTP/1.1" 200 -
+[2026-03-15 01:57:26,553] INFO werkzeug: 127.0.0.1 - - [15/Mar/2026 01:57:26] "GET /api/train/hardware HTTP/1.1" 200 -
+[2026-03-15 01:57:26,788] INFO werkzeug: 127.0.0.1 - - [15/Mar/2026 01:57:26] "[31m[1mPOST /api/model-management/modelmagement_page HTTP/1.1[0m" 400 -
+[2026-03-15 01:57:27,021] INFO werkzeug: 127.0.0.1 - - [15/Mar/2026 01:57:27] "GET /api/modelname HTTP/1.1" 200 -
+[2026-03-15 01:57:27,265] INFO werkzeug: 127.0.0.1 - - [15/Mar/2026 01:57:27] "GET /api/user-running-task HTTP/1.1" 200 -

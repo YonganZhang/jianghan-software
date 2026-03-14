@@ -1,0 +1,2 @@
+D:\server\jianghan-software\src\backend\models.py:105: SAWarning: Multiple rows returned with uselist=False for lazily-loaded attribute 'User.root_directory' 
+  return self.root_directory

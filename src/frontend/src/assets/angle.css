@@ -1,0 +1,354 @@
+/* 全局样式 - 方形设计 */
+
+/* 按钮样式 */
+.ant-btn {
+  border-radius: 0 !important;
+}
+
+/* 选择器样式 */
+.ant-select {
+  border-radius: 0 !important;
+}
+
+.ant-select .ant-select-selector {
+  border-radius: 0 !important;
+}
+
+/* 输入框样式 */
+.ant-input {
+  border-radius: 0 !important;
+}
+
+.ant-input-number {
+  border-radius: 0 !important;
+}
+
+.ant-input-affix-wrapper {
+  border-radius: 0 !important;
+}
+
+/* 表单项样式 */
+.ant-form-item {
+  border-radius: 0 !important;
+}
+
+/* 模态框样式 */
+.ant-modal-content {
+  border-radius: 0 !important;
+}
+
+.ant-modal-header {
+  border-radius: 0 !important;
+}
+
+.ant-modal-footer {
+  border-radius: 0 !important;
+}
+
+/* 卡片样式 */
+.ant-card {
+  border-radius: 0 !important;
+}
+
+.ant-card-head {
+  border-radius: 0 !important;
+}
+
+.ant-card-body {
+  border-radius: 0 !important;
+}
+
+/* 表格样式 */
+.ant-table {
+  border-radius: 0 !important;
+}
+
+.ant-table-thead > tr > th {
+  border-radius: 0 !important;
+}
+
+/* 分页样式 */
+.ant-pagination-item {
+  border-radius: 0 !important;
+}
+
+.ant-pagination-prev,
+.ant-pagination-next {
+  border-radius: 0 !important;
+}
+
+/* 标签页样式 */
+.ant-tabs-tab {
+  border-radius: 0 !important;
+}
+
+/* 消息提示样式 */
+.ant-message-notice-content {
+  border-radius: 0 !important;
+}
+
+/* 通知样式 */
+.ant-notification-notice {
+  border-radius: 0 !important;
+}
+
+/* 下拉菜单样式 */
+.ant-dropdown-menu {
+  border-radius: 0 !important;
+}
+
+/* 工具提示样式 */
+.ant-tooltip-inner {
+  border-radius: 0 !important;
+}
+
+/* 进度条样式 */
+.ant-progress-bg {
+  border-radius: 0 !important;
+}
+
+/* 开关样式 */
+.ant-switch {
+  border-radius: 0 !important;
+}
+
+/* 滑块样式 */
+.ant-slider-track {
+  border-radius: 0 !important;
+}
+
+.ant-slider-handle {
+  border-radius: 0 !important;
+}
+
+/* 上传组件样式 */
+.ant-upload-list-item {
+  border-radius: 0 !important;
+}
+
+/* 树形控件样式 */
+.ant-tree-node-content-wrapper {
+  border-radius: 0 !important;
+}
+
+/* 时间选择器样式 */
+.ant-picker {
+  border-radius: 0 !important;
+}
+
+/* 级联选择器样式 */
+.ant-cascader-picker {
+  border-radius: 0 !important;
+}
+
+/* 评分组件样式 */
+.ant-rate-star {
+  border-radius: 0 !important;
+}
+
+/* 徽标样式 */
+.ant-badge-count {
+  border-radius: 0 !important;
+}
+
+/* 标签样式 */
+.ant-tag {
+  border-radius: 0 !important;
+}
+
+/* 步骤条样式 */
+.ant-steps-item-icon {
+  border-radius: 0 !important;
+}
+
+/* 时间轴样式 */
+.ant-timeline-item-head {
+  border-radius: 0 !important;
+}
+
+/* 头像样式 */
+.ant-avatar {
+  border-radius: 0 !important;
+}
+
+/* 抽屉样式 */
+.ant-drawer-content,
+.ant-drawer-header {
+  border-radius: 0 !important;
+}
+
+/* 骨架屏样式 */
+.ant-skeleton-element {
+  border-radius: 0 !important;
+}
+
+/* 图片样式 */
+.ant-image {
+  border-radius: 0 !important;
+}
+
+/* 日历样式 */
+.ant-picker-calendar-date {
+  border-radius: 0 !important;
+}
+
+/* 气泡确认框样式 */
+.ant-popconfirm-message {
+  border-radius: 0 !important;
+}
+
+/* 描述列表样式 */
+.ant-descriptions-item-label {
+  border-radius: 0 !important;
+}
+
+/* 统计数值样式 */
+.ant-statistic-title {
+  border-radius: 0 !important;
+}
+
+/* 结果页样式 */
+.ant-result-title {
+  border-radius: 0 !important;
+}
+
+/* 页面头部样式 */
+.ant-page-header-heading-title {
+  border-radius: 0 !important;
+}
+
+/* 列表样式 */
+.ant-list-item {
+  border-radius: 0 !important;
+}
+
+/* 评论样式 */
+.ant-comment-content-author-name {
+  border-radius: 0 !important;
+}
+
+/* 面包屑样式 */
+.ant-breadcrumb-link {
+  border-radius: 0 !important;
+}
+
+/* 锚点样式 */
+.ant-anchor-link-title {
+  border-radius: 0 !important;
+}
+
+/* 分割线样式 */
+.ant-divider {
+  border-radius: 0 !important;
+}
+
+/* 空状态样式 */
+.ant-empty-description {
+  border-radius: 0 !important;
+}
+
+/* 加载状态样式 */
+.ant-spin-dot-item {
+  border-radius: 0 !important;
+}
+
+/* 禁用状态样式 */
+.ant-btn[disabled],
+.ant-input[disabled],
+.ant-select-disabled .ant-select-selector {
+  border-radius: 0 !important;
+}
+
+/* 焦点样式 */
+*:focus {
+  border-radius: 0 !important;
+}
+
+/* 全局字体设置 */
+body {
+  font-family: 'Source Han Sans CN', 'Microsoft YaHei', 'PingFang SC', 'Helvetica Neue', Arial,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 全局滚动条样式 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* 全局链接样式 */
+a {
+  color: #1890ff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #40a9ff;
+}
+
+/* 全局文本选择样式 */
+::selection {
+  background-color: #e6f7ff;
+  color: #1890ff;
+}
+
+/* 全局转场动画 */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.slide-enter-active,
+.slide-leave-active {
+  transition: transform 0.3s ease;
+}
+
+.slide-enter-from {
+  transform: translateX(-100%);
+}
+
+.slide-leave-to {
+  transform: translateX(100%);
+}
+
+/* 全局响应式布局 */
+@media (max-width: 768px) {
+  .ant-col {
+    margin-bottom: 16px;
+  }
+
+  .ant-form-item {
+    margin-bottom: 16px;
+  }
+}
+
+/* 全局打印样式 */
+@media print {
+  .ant-btn,
+  .ant-modal,
+  .ant-drawer {
+    display: none !important;
+  }
+}

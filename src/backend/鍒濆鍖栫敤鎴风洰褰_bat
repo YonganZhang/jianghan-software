@@ -1,0 +1,9 @@
+@echo off
+chcp 65001 > nul
+cd /d "%~dp0"
+echo.
+echo ========================================
+echo 为所有用户初始化目录结构
+echo ========================================
+echo.
+python init_user_directories.py

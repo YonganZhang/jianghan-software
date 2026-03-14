@@ -1,0 +1,53 @@
+project:
+  name: jianghan-software
+  display_name: 江汉油田智能软件系统
+  domain: software.yongan.site
+
+backend:
+  type: python
+  dir: backend
+  start_cmd: "{python} app.py"
+  port: 5000
+  conda:
+    env_path: D:\Anaconda\envs\software
+    python_version: "3.10"
+    pip_requirements: requirements_deploy.txt
+    conda_packages: []
+  env:
+    PYTHONIOENCODING: utf-8
+    FLASK_ENV: production
+    FLASK_DEBUG: "0"
+    # SECRET_KEY: changeme-in-production
+
+frontend:
+  dir: frontend
+  build_cmd: npm run build
+  output_dir: dist
+  serve_mode: embedded
+
+runtime_deps:
+  - name: julia
+    version: "1.10"
+    scope: project
+    required: false
+    check_cmd: julia --version
+    install_method: portable-zip
+
+hooks:
+  pre_deploy: null
+  post_deploy: null
+
+service:
+  stop_timeout: 15
+  restart_policy: always
+
+logging:
+  rotate_size_mb: 50
+  rotate_interval_hours: 24
+  keep_files: 10
+
+health:
+  url: "http://localhost:{port}/"
+  status: 200
+  startup_wait: 15
+  retries: 3
