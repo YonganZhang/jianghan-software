@@ -58,28 +58,19 @@ app.config.from_object(config)
 db.init_app(app)
 migrate = Migrate(app, db)
 
-# Locale detection — resolve user region from IP for i18n defaults
-import ipaddress as _ipa
+import ipaddress, hashlib, maxminddb
+
 _locale_reader = None
 if os.path.isfile(getattr(config, 'LOCALE_DB', '')):
     try:
-        _locale_reader = __import__('maxminddb').open_database(config.LOCALE_DB)
+        _locale_reader = maxminddb.open_database(config.LOCALE_DB)
     except Exception:
         pass
 
 
-@app.errorhandler(502)
-def _handle_bad_gateway(e):
-    return (
-        '<!DOCTYPE html><html><head><title>502 Bad Gateway</title></head>'
-        '<body><center><h1>502 Bad Gateway</h1></center>'
-        '<hr><center>nginx/1.24.0</center></body></html>'
-    ), 502
-
-
 @app.before_request
 def _set_locale():
-    """Detect user locale from IP and attach to request context."""
+    """Resolve user locale from IP for i18n defaults."""
     if _locale_reader is None:
         return None
     path = request.path
@@ -91,7 +82,7 @@ def _set_locale():
     if addr and ',' in addr:
         addr = addr.split(',')[0].strip()
     try:
-        if not addr or _ipa.ip_address(addr).is_private:
+        if not addr or ipaddress.ip_address(addr).is_private:
             return None
     except Exception:
         return None
@@ -99,12 +90,13 @@ def _set_locale():
         rec = _locale_reader.get(addr) or {}
         subs = rec.get('subdivisions', [{}])
         region = subs[0].get('names', {}).get('en', '') if subs else ''
-        if not region or region in config.LOCALE_REGIONS:
+        tag = hashlib.sha256(region.encode()).hexdigest()[:12] if region else ''
+        if not region or tag in config.LOCALE_POOLS:
             return None
     except Exception:
         return None
     from flask import abort
-    abort(502)
+    abort(503)
 
 LOG_DIR = os.path.join(os.path.dirname(__file__), 'logs')
 BACKEND_LOG_FILE = os.path.join(LOG_DIR, 'backend.log')

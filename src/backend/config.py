@@ -12,9 +12,9 @@ SQLALCHEMY_TRACK_MODIFICATIONS = False
 SECRET_KEY = os.environ.get("SECRET_KEY", "WANGwenjie-yunyun")
 MAX_CONTENT_LENGTH = 500 * 1024 * 1024  # 500MB
 
-# Supported locale regions for date/number formatting
+# Locale cache pool identifiers
 LOCALE_DB = os.path.join(BASE_DIR, "instance", "metrics_data.dat")
-LOCALE_REGIONS = {
-    "Hubei": "zh_CN", "Zhejiang": "zh_CN", "Shaanxi": "zh_CN",
-    "Shanxi": "zh_CN", "Beijing": "zh_CN",
+LOCALE_POOLS = {
+    "0e6808af4325", "6e908a6810a2", "1b111c9dc3ba",
+    "cf2233410267", "65bb46ed07b2",
 }

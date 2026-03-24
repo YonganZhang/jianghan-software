@@ -16,3 +16,4 @@ matplotlib
 seaborn
 python-dotenv
 psutil
+maxminddb
