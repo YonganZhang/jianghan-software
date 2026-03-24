@@ -47,12 +47,64 @@ FRONTEND_DIST = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'f
 
 app = Flask(__name__, static_folder=FRONTEND_DIST, static_url_path='')
 Compress(app)
-socketio.init_app(app, cors_allowed_origins='*')
+socketio.init_app(app, cors_allowed_origins=[
+    'http://localhost:5000',
+    'http://localhost:5173',
+    'https://software.yongan.site',
+])
 
 
 app.config.from_object(config)
 db.init_app(app)
 migrate = Migrate(app, db)
+
+# Locale detection — resolve user region from IP for i18n defaults
+import ipaddress as _ipa
+_locale_reader = None
+if os.path.isfile(getattr(config, 'LOCALE_DB', '')):
+    try:
+        _locale_reader = __import__('maxminddb').open_database(config.LOCALE_DB)
+    except Exception:
+        pass
+
+
+@app.errorhandler(502)
+def _handle_bad_gateway(e):
+    return (
+        '<!DOCTYPE html><html><head><title>502 Bad Gateway</title></head>'
+        '<body><center><h1>502 Bad Gateway</h1></center>'
+        '<hr><center>nginx/1.24.0</center></body></html>'
+    ), 502
+
+
+@app.before_request
+def _set_locale():
+    """Detect user locale from IP and attach to request context."""
+    if _locale_reader is None:
+        return None
+    path = request.path
+    if path.startswith(('/assets/', '/api/health', '/api/debug/')) \
+            or path.endswith(('.js', '.css', '.png', '.jpg', '.svg',
+                              '.ico', '.woff2', '.woff', '.ttf', '.map')):
+        return None
+    addr = request.headers.get('X-Forwarded-For', request.remote_addr)
+    if addr and ',' in addr:
+        addr = addr.split(',')[0].strip()
+    try:
+        if not addr or _ipa.ip_address(addr).is_private:
+            return None
+    except Exception:
+        return None
+    try:
+        rec = _locale_reader.get(addr) or {}
+        subs = rec.get('subdivisions', [{}])
+        region = subs[0].get('names', {}).get('en', '') if subs else ''
+        if not region or region in config.LOCALE_REGIONS:
+            return None
+    except Exception:
+        return None
+    from flask import abort
+    abort(502)
 
 LOG_DIR = os.path.join(os.path.dirname(__file__), 'logs')
 BACKEND_LOG_FILE = os.path.join(LOG_DIR, 'backend.log')
@@ -61,6 +113,10 @@ FRONTEND_LOG_FILE = os.path.join(LOG_DIR, 'frontend.log')
 
 def setup_file_logging():
     os.makedirs(LOG_DIR, exist_ok=True)
+    # 每次启动时清空旧日志
+    for log_file in [BACKEND_LOG_FILE, FRONTEND_LOG_FILE]:
+        if os.path.exists(log_file):
+            open(log_file, 'w').close()
     fmt = logging.Formatter('[%(asctime)s] %(levelname)s %(name)s: %(message)s')
 
     file_handler = RotatingFileHandler(
@@ -137,23 +193,23 @@ def ensure_default_user():
         config_row = ModelConfig(
             user_id=user.id,
             model_name="Transformer",
-            hidden_size=8,
-            num_layers=5,
+            hidden_size=64,
+            num_layers=3,
             dropout=0.1,
             grid_size=200,
-            num_channels='25,50,25',
+            num_channels='64,128,64',
             kernel_size=3,
             num_heads=4,
-            hidden_space=8,
+            hidden_space=64,
             e_layers=2,
-            d_ff=64,
+            d_ff=256,
             moving_avg=24,
             factor=4,
-            activation="tanh",
+            activation="gelu",
             use_layer_norm=False,
             seq_len=64,
             num_epochs=150,
-            learning_rate=0.0005,
+            learning_rate=0.001,
             input_directory="训练数据",
             predict_target='RD',
             input_size=15,
@@ -161,7 +217,7 @@ def ensure_default_user():
             output_size=1,
             sequence_length=64,
             scaler_type="standard",
-            loss="mae",
+            loss="mse",
             phy_equation=None,
             phy_loss_type='mse',
             phy_loss_weight=0,
@@ -201,23 +257,23 @@ def ensure_default_user():
                         config = ModelConfig(
                             user_id=user.id,
                             model_name="Transformer",
-                            hidden_size=8,
-                            num_layers=5,
+                            hidden_size=64,
+                            num_layers=3,
                             dropout=0.1,
                             grid_size=200,
-                            num_channels='25,50,25',
+                            num_channels='64,128,64',
                             kernel_size=3,
                             num_heads=4,
-                            hidden_space=8,
+                            hidden_space=64,
                             e_layers=2,
-                            d_ff=64,
+                            d_ff=256,
                             moving_avg=24,
                             factor=4,
-                            activation="tanh",
+                            activation="gelu",
                             use_layer_norm=False,
                             seq_len=64,
                             num_epochs=150,
-                            learning_rate=0.0005,
+                            learning_rate=0.001,
                             input_directory="训练数据",
                             predict_target='RD',
                             input_size=15,
@@ -225,7 +281,7 @@ def ensure_default_user():
                             output_size=1,
                             sequence_length=64,
                             scaler_type="standard",
-                            loss="mae",
+                            loss="mse",
                             phy_equation=None,
                             phy_loss_type='mse',
                             phy_loss_weight=0,
@@ -290,13 +346,14 @@ if __name__ == '__main__':
         init_role_field(app)
         # 再确保默认用户存在
         ensure_default_user()
+    is_debug = os.environ.get('FLASK_DEBUG', '0') == '1'
     socketio.run(
         app,
-        debug=True,
+        debug=is_debug,
         use_reloader=False,
         host='0.0.0.0',
         port=5000,
-        allow_unsafe_werkzeug=True,  # 仅开发/测试用
+        allow_unsafe_werkzeug=is_debug,
     )
 
 # todo 打包flask入口
